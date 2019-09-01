@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.IL">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+        <TargetGroup>netcoreapp2.0</TargetGroup>
+        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+        <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+        <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+        
+        <MicrosoftNetCoreIlasmPackageVersion>3.0.0-preview1-27101-02</MicrosoftNetCoreIlasmPackageVersion>
+        <IncludePath>include\$(TargetGroup)</IncludePath>
+        <IncludePath Condition="'$(TargetGroup)' == 'netcoreapp2.0'">include\netcoreapp</IncludePath>
+        <IlasmFlags>$(IlasmFlags) -INCLUDE=$(IncludePath)</IlasmFlags>
+        <Configurations>netcoreapp-Debug;netcoreapp-Release;netcoreapp2.0-Debug;netcoreapp2.0-Release;netstandard-Debug;netstandard-Release;netstandard1.0-Debug;netstandard1.0-Release</Configurations>
+    </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Runtime" />
+    <ILResourceReference Include="$(RefPath)$(TargetFileName)" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILProj", "ILProj\ILProj.ilproj", "{32A475A2-AB30-4D72-B560-67FC6BB94D16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32A475A2-AB30-4D72-B560-67FC6BB94D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A475A2-AB30-4D72-B560-67FC6BB94D16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A475A2-AB30-4D72-B560-67FC6BB94D16}.Debug|Any CPU.ActiveCfg = netcoreapp2.0-Release|Any CPU
+		{32A475A2-AB30-4D72-B560-67FC6BB94D16}.Debug|Any CPU.Build.0 = netcoreapp2.0-Release|Any CPU
+	EndGlobalSection
+EndGlobal
