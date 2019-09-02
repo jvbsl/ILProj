@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.IL">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp2.0</TargetFramework>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <MicrosoftNetCoreIlasmPackageVersion>3.0.0-preview1-27101-02</MicrosoftNetCoreIlasmPackageVersion>
         <IncludePath Condition="'$(TargetFramework)' == 'netstandard1.0'">include\netstandard</IncludePath>
         <IncludePath Condition="'$(TargetFramework)' == 'netstandard2.0'">include\netstandard</IncludePath>
